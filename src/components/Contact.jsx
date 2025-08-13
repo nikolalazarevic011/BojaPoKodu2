@@ -4,6 +4,7 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    address: '',
     colorCode: '',
     damageDescription: ''
   });
@@ -27,6 +28,7 @@ Molim za ponudu za automobilsku boju:
 
 Ime: ${formData.name}
 Email: ${formData.email}
+Adresa: ${formData.address}
 ${formData.colorCode ? `Kod boje: ${formData.colorCode}` : 'Kod boje: Nepoznat'}
 
 Opis:
@@ -87,6 +89,21 @@ ${formData.name}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-auto-blue focus:border-transparent"
                   placeholder="marko@example.com"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Adresa za dostavu *
+                </label>
+                <input
+                  type="text"
+                  name="address"
+                  required
+                  value={formData.address}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-auto-blue focus:border-transparent"
+                  placeholder="Ulica i broj, grad, poštanski broj"
                 />
               </div>
 
