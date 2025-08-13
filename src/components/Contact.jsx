@@ -29,7 +29,7 @@ Ime: ${formData.name}
 Email: ${formData.email}
 ${formData.colorCode ? `Kod boje: ${formData.colorCode}` : 'Kod boje: Nepoznat'}
 
-Opis oštećenja:
+Opis:
 ${formData.damageDescription}
 
 Hvala!
