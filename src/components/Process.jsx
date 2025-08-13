@@ -3,19 +3,19 @@ function Process() {
     {
       step: "01",
       title: "Pošalji kod boje",
-      description: "Pronađi kod boje na svom automobilu i pošalji nam ga putem forme",
+      description: "Pronađi kod boje na svom automobilu (nalazi se na nalepnici u vratima, haubi ili VIN-u) i pošalji nam ga putem forme",
       icon: "📋"
     },
     {
       step: "02", 
       title: "Dobij komplet",
-      description: "Pripremi ćemo originalni set materijala i dostaviti za 24-48h",
+      description: "Mi ti pošaljemo tačnu boju u spreju + sve što ti treba za kvalitetnu popravku -  Isporuka za 24–48h širom Srbije!",
       icon: "📦"
     },
     {
       step: "03",
       title: "Popravi auto",
-      description: "Prati jednostavna uputstva i popravi auto kao profesionalac",
+      description: "Popravi grešku, ogrebotinu ili oštećenje – kao profesionalac!",
       icon: "🚗"
     }
   ];

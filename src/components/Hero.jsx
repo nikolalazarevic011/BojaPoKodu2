@@ -5,7 +5,7 @@ function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Popravi boju tvog auta sam - <span className="text-auto-blue">uštedi 10x više</span> para!
+             Želiš da tvoj auto opet sija kao nov? - <span className="text-auto-blue">Bez grešaka i bez gubitka</span> para!
             </h1>
             <p className="text-xl md:text-2xl text-auto-gray mb-8">
               <span className="font-semibold text-auto-orange">1.990 RSD</span> umesto{' '}
