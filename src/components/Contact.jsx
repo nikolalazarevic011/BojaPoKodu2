@@ -5,8 +5,6 @@ function Contact() {
     name: '',
     phone: '',
     email: '',
-    carMake: '',
-    carModel: '',
     colorCode: '',
     damageDescription: ''
   });
@@ -87,35 +85,6 @@ function Contact() {
                 />
               </div>
 
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Marka automobila *
-                  </label>
-                  <input
-                    type="text"
-                    name="carMake"
-                    required
-                    value={formData.carMake}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-auto-blue focus:border-transparent"
-                    placeholder="BMW, Audi, VW..."
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Model i godina
-                  </label>
-                  <input
-                    type="text"
-                    name="carModel"
-                    value={formData.carModel}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-auto-blue focus:border-transparent"
-                    placeholder="320i 2018"
-                  />
-                </div>
-              </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">

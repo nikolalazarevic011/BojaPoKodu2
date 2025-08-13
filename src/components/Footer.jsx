@@ -5,18 +5,18 @@ function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">
-              AutoSpray Serbia
+              Boja po Kodu
             </h3>
             <p className="text-gray-400 mb-4">
               Originalni automobilski lakovi i materijali za DIY popravke. 
               Uštedite novac i popravite auto sam!
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                📘 Facebook
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/bojapokodu" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 📸 Instagram
+              </a>
+              <a href="https://www.tiktok.com/@bojapokodu" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                🎵 TikTok
               </a>
             </div>
           </div>
@@ -65,10 +65,10 @@ function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 AutoSpray Serbia. Sva prava zadržana.
+            © 2024 Boja po Kodu. Sva prava zadržana.
           </p>
           <p className="text-gray-400 text-sm mt-4 md:mt-0">
-            Napravljeno sa ❤️ u Srbiji
+            Napravljeno sa ❤️ od strane <a href="https://www.nikola-apps.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">nikola-apps.com</a>
           </p>
         </div>
       </div>
