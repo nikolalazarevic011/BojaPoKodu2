@@ -3,8 +3,11 @@ function Header() {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-auto-blue">
-            Boja po Kodu
+          <div className="flex items-center space-x-3">
+            <img src="/bojapokodu.jpg" alt="Boja po Kodu" className="h-10 w-10 rounded-lg object-cover" />
+            <div className="text-2xl font-bold text-auto-blue">
+              Boja po Kodu
+            </div>
           </div>
           
           <div className="hidden md:flex space-x-8">

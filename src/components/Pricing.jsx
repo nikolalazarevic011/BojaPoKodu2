@@ -43,10 +43,7 @@ function Pricing() {
                 <span className="text-green-500 mr-3">✓</span>
                 Dostava za 24-48h
               </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Telefon podrška
-              </li>
+          
               <li className="flex items-center">
                 <span className="text-green-500 mr-3">✓</span>
                 Garancija na materijale

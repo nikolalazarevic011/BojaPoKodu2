@@ -24,9 +24,11 @@ function Hero() {
           </div>
           
           <div className="relative">
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <span className="text-gray-500">Hero Image - Car Repair</span>
-            </div>
+            <img 
+              src="/bojapokodu.jpg" 
+              alt="Boja po Kodu - Automotive Paint Products" 
+              className="rounded-lg h-96 w-full object-cover shadow-lg"
+            />
           </div>
         </div>
       </div>

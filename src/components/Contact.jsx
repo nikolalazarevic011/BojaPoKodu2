@@ -3,7 +3,6 @@ import { useState } from 'react';
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
-    phone: '',
     email: '',
     colorCode: '',
     damageDescription: ''
@@ -18,9 +17,31 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Here you would typically send the data to a server
-    alert('Hvala! Kontaktiraćemo vas uskoro sa ponudom.');
+    
+    // Create email content
+    const subject = `Zahtev za ponudu - ${formData.name}`;
+    const body = `
+Pozdrav,
+
+Molim za ponudu za automobilsku boju:
+
+Ime: ${formData.name}
+Email: ${formData.email}
+${formData.colorCode ? `Kod boje: ${formData.colorCode}` : 'Kod boje: Nepoznat'}
+
+Opis oštećenja:
+${formData.damageDescription}
+
+Hvala!
+
+${formData.name}
+    `.trim();
+    
+    // Create mailto link
+    const mailtoLink = `mailto:bojapokodu@proton.me?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open default email app
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -39,35 +60,19 @@ function Contact() {
           {/* Contact Form */}
           <div className="bg-white rounded-xl p-8 shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Ime i prezime *
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-auto-blue focus:border-transparent"
-                    placeholder="Marko Petrović"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Telefon *
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    required
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-auto-blue focus:border-transparent"
-                    placeholder="060 123 4567"
-                  />
-                </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Ime i prezime *
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-auto-blue focus:border-transparent"
+                  placeholder="Marko Petrović"
+                />
               </div>
 
               <div>
@@ -88,7 +93,7 @@ function Contact() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Kod boje (ako znaš)
+                  Kod boje
                 </label>
                 <input
                   type="text"
@@ -102,7 +107,7 @@ function Contact() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Opis oštećenja *
+                  Opis *
                 </label>
                 <textarea
                   name="damageDescription"
@@ -133,20 +138,11 @@ function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-auto-blue rounded-lg flex items-center justify-center text-white mr-4">
-                    📞
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-900">Telefon</p>
-                    <p className="text-auto-gray">+381 60 123 4567</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-auto-blue rounded-lg flex items-center justify-center text-white mr-4">
                     📧
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Email</p>
-                    <p className="text-auto-gray">info@autospray.rs</p>
+                    <p className="text-auto-gray">bojapokodu@proton.me</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -173,10 +169,6 @@ function Contact() {
                 <li className="flex items-center">
                   <span className="mr-3">✓</span>
                   Brza dostava 24-48h
-                </li>
-                <li className="flex items-center">
-                  <span className="mr-3">✓</span>
-                  Telefon podrška
                 </li>
                 <li className="flex items-center">
                   <span className="mr-3">✓</span>

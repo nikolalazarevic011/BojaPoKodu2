@@ -55,8 +55,7 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Kontakt</h4>
             <div className="space-y-2 text-gray-400">
-              <p>📞 +381 60 123 4567</p>
-              <p>📧 info@autospray.rs</p>
+              <p>📧 bojapokodu@proton.me</p>
               <p>🕒 Pon-Pet: 8:00-17:00</p>
               <p>📍 Beograd, Srbija</p>
             </div>
@@ -68,7 +67,7 @@ function Footer() {
             © 2024 Boja po Kodu. Sva prava zadržana.
           </p>
           <p className="text-gray-400 text-sm mt-4 md:mt-0">
-            Napravljeno sa ❤️ od strane <a href="https://www.nikola-apps.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">nikola-apps.com</a>
+            Napravljeno od strane <a href="https://www.nikola-apps.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">nikola-apps</a>
           </p>
         </div>
       </div>
