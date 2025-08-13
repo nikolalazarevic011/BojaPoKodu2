@@ -9,7 +9,7 @@ function Footer() {
             </h3>
             <p className="text-gray-400 mb-4">
               Originalni automobilski lakovi i materijali za DIY popravke. 
-              Uštedite novac i popravite auto sam!
+              Uštedite novac i popravite auto sami!
             </p>
             <div className="flex space-x-4">
               <a href="https://www.instagram.com/bojapokodu" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
