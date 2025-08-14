@@ -13,7 +13,7 @@ function Hero() {
             </p>
             <p className="text-lg text-auto-gray mb-8">
               Originalna formula boje identična fabričkoj. Sve što ti treba u jednom paketu. 
-              Dostava za 24-48h širom Srbije.
+              Danas poručiš ➡️sutra se pakuje➡️prekosutra šalje
             </p>
             <button 
               onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}

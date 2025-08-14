@@ -1,36 +1,31 @@
 function Products() {
   const products = [
     {
-      category: "Spray boje",
+      category: "Sprejevi",
       items: [
-        { name: "BMW Alpine White", code: "300", price: "890 RSD" },
-        { name: "Audi Phantom Black", code: "L041", price: "890 RSD" },
-        { name: "VW Candy White", code: "B9A", price: "890 RSD" },
-        { name: "Opel Summit White", code: "GAZ", price: "890 RSD" }
+        { name: "Fiksno", price: "1890 RSD" },
+        
       ]
     },
     {
       category: "Predmaterijali", 
       items: [
-        { name: "Primer spray", price: "450 RSD" },
-        { name: "Baza za metalik", price: "390 RSD" },
-        { name: "Prep spray", price: "320 RSD" }
+        { name: "Od", price: "399 RSD" },
+       
       ]
     },
     {
       category: "Lakovi",
       items: [
-        { name: "Clear coat 2K", price: "650 RSD" },
-        { name: "UV zaštita", price: "580 RSD" },
-        { name: "Visoki sjaj", price: "620 RSD" }
+         { name: "Od", price: "499 RSD" },
+      
       ]
     },
     {
       category: "Alati",
       items: [
-        { name: "Šmirgla set", price: "380 RSD" },
-        { name: "Krpe za poliranje", price: "250 RSD" },
-        { name: "Gito folija", price: "190 RSD" }
+         { name: "Od", price: "599 RSD" },
+        
       ]
     }
   ];

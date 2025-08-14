@@ -51,7 +51,8 @@ function Pricing() {
                             </li>
                             <li className="flex items-center">
                                 <span className="text-green-500 mr-3">✓</span>
-                                Dostava za 24-48h
+                                Danas poručiš ➡️sutra se pakuje➡️prekosutra
+                                šalje
                             </li>
 
                             <li className="flex items-center">
@@ -76,7 +77,7 @@ function Pricing() {
                     <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
                         <div className="text-center mb-6">
                             <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                                Autolakirnica
+                                Autofarbara
                             </h3>
                             <div className="text-4xl font-bold text-gray-600 mb-2">
                                 15.000+ RSD
@@ -132,7 +133,7 @@ function Pricing() {
 
                 <div className="text-center mt-12 bg-auto-light rounded-xl p-8 max-w-2xl mx-auto">
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                        Uštediš{" "}
+                        Uštediš
                         <span className="text-auto-orange">13.000+ RSD</span>
                     </h3>
                     <p className="text-auto-gray text-lg">

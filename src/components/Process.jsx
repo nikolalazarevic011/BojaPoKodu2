@@ -8,7 +8,7 @@ function Process() {
     },
     {
       step: "02", 
-      title: "Dobij komplet",
+      title: "Dobijaš komplet",
       description: "Mi ti pošaljemo tačnu boju u spreju + sve što ti treba za kvalitetnu popravku -  Isporuka za 24–48h širom Srbije!",
       icon: "📦"
     },
@@ -61,11 +61,11 @@ function Process() {
               Gde da pronađem kod boje?
             </h3>
             <p className="text-auto-gray mb-4">
-              Kod boje se obično nalazi na naljepnici u odjeljku motora, 
+              Kod boje se obično nalazi na nalepnici u odeljku motora,
               na vratima vozača ili u prtljažniku. Izgledaju kao: <strong>L041, B9A, 300</strong>
             </p>
             <p className="text-sm text-auto-gray">
-              Nisi siguran? Pošalji nam fotografiju naljepnice i mi ćemo ti pomoći!
+              Nisi siguran? Pošalji nam fotografiju nalepnice i mi ćemo ti pomoći!
             </p>
           </div>
         </div>
