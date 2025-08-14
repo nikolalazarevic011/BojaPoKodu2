@@ -61,7 +61,7 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Kontakt</h4>
             <div className="space-y-2 text-gray-400">
-              <p>📧 bojapokodu@proton.me</p>
+              <p>📧 <a href="mailto:bojapokodu@proton.me" className="hover:text-white transition-colors">bojapokodu@proton.me</a></p>
               <p>🕒 Pon-Pet: 8:00-17:00</p>
               <p>📍 Beograd, Srbija</p>
             </div>

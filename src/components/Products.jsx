@@ -96,7 +96,7 @@ function Products() {
               <div className="flex items-start">
                 <span className="text-green-500 mr-3 mt-1">✔️</span>
                 <div>
-                  <span className="font-semibold">Gito, šmirgle, krpe, trakove</span> – <em>SVE u kompletu</em>
+                  <span className="font-semibold">Gitovi, šmirgle, krpe, trakove</span> – <em>SVE u kompletu</em>
                 </div>
               </div>
             </div>
