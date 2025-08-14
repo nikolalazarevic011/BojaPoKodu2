@@ -33,6 +33,9 @@ function Header() {
             <a href="#process" className="text-auto-gray hover:text-auto-blue transition-colors">
               Proces
             </a>
+            <a href="#work" className="text-auto-gray hover:text-auto-blue transition-colors">
+              Radovi
+            </a>
             <a href="#pricing" className="text-auto-gray hover:text-auto-blue transition-colors">
               Cene
             </a>
@@ -82,6 +85,13 @@ function Header() {
                 className="text-auto-gray hover:text-auto-blue transition-colors py-2"
               >
                 Proces
+              </a>
+              <a 
+                href="#work" 
+                onClick={closeMenu}
+                className="text-auto-gray hover:text-auto-blue transition-colors py-2"
+              >
+                Radovi
               </a>
               <a 
                 href="#pricing" 

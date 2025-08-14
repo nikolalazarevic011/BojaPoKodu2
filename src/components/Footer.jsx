@@ -46,6 +46,11 @@ function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#work" className="text-gray-400 hover:text-white transition-colors">
+                  Radovi
+                </a>
+              </li>
+              <li>
                 <a href="#pricing" className="text-gray-400 hover:text-white transition-colors">
                   Cene
                 </a>
