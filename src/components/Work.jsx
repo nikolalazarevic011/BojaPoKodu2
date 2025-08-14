@@ -29,6 +29,24 @@ function Work() {
     };
   }, []);
 
+  // Add custom CSS to limit Instagram caption height
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.textContent = `
+      .instagram-media iframe {
+        max-height: 600px !important;
+      }
+      .instagram-embed-container iframe {
+        max-height: 600px !important;
+      }
+    `;
+    document.head.appendChild(style);
+
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   const instagramPosts = [
     'https://www.instagram.com/reel/DNOiYtwokEU/',
     'https://www.instagram.com/reel/DNN5sSQIfWj/',
@@ -80,7 +98,6 @@ function Work() {
               <div key={index} className="instagram-embed-container">
                 <blockquote 
                   className="instagram-media" 
-                  data-instgrm-captioned
                   data-instgrm-permalink={postUrl}
                   data-instgrm-version="14"
                   style={{ 
