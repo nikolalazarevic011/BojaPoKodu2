@@ -25,9 +25,9 @@ function Hero() {
           
           <div className="relative">
             <img 
-              src="/bojapokodu.jpg" 
+              src="/WhatsApp Image 2025-08-13 at 10.41.35 PM.jpeg" 
               alt="Boja po Kodu - Automotive Paint Products" 
-              className="rounded-lg h-96 w-full object-cover shadow-lg"
+              className="rounded-lg w-full object-contain shadow-lg max-h-[500px]"
             />
           </div>
         </div>
